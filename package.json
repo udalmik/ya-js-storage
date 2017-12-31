@@ -1,8 +1,8 @@
 {
   "name": "ya-js-storage",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Yet another JS storage for those who still need to deal with legacy IE browsers version",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "karma start"
   },
