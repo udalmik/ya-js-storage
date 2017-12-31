@@ -1,6 +1,6 @@
 {
   "name": "ya-js-storage",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Yet another JS storage for those who still need to deal with legacy IE browsers version",
   "main": "./src/index.js",
   "scripts": {
