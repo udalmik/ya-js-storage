@@ -155,12 +155,6 @@ $.yaJsStorage.stopListening("mykey"); // cancel all listeners for "mykey" change
 
 Stops listening for key change. If callback is set, only the used callback will be cleared, otherwise all listeners will be dropped.
 
-## Donate
-
-Support yaJsStorage development
-
-[![Donate to author](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DB26KWR2BQX5W)
-
 ## Features
 
 yaJsStorage supports the following features:
