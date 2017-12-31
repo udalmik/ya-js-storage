@@ -1,6 +1,6 @@
 
 
-> This is a fork of great [jStorage](https://github.com/andris9/jStorage) library for those who still need to deal with old IE browser versions, as **jstorage** NPM package is no longer maintained. 
+> This is a fork of great [jStorage](https://github.com/andris9/jStorage) library with minor modifications and latest updates available in NPM for those who still need to deal with old IE browser versions (as **jstorage** NPM package is no longer maintained) 
 ----
 
 # Yet Another JS Storage (ya-js-storage)
