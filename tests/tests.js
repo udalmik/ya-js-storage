@@ -120,6 +120,29 @@ asyncTest("publish/subscribe", function() {
 	}, 100);
 });
 
+asyncTest("publish/subscribe - unsubscribe", function() {
+
+	var x = 0;
+
+	var unsubscribe = $.yaJsStorage.subscribe("testchannel", function() {
+		// do not expect to be executed
+		x = 1;
+	});
+
+	unsubscribe();
+
+	setTimeout(function() {
+		$.yaJsStorage.publish("testchannel", {arr: [1,2,3]});
+	}, 50);
+
+	setTimeout(function() {
+		ok(x === 0);
+		$.yaJsStorage.flush();		
+		start();
+	}, 50);
+
+});
+
 module("listenKeyChange");
 
 asyncTest("specific key - updated", function() {

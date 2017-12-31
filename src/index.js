@@ -571,6 +571,22 @@
     }
 
     /**
+     * Removes channel subscriber
+     * 
+     * @param {String} channel Channel name 
+     * @param {Function} callback Subscriber function
+     */
+    function _removeSubscriber(channel, callback) {
+        if (_pubsub_observers[channel]) {
+            for (var i = _pubsub_observers[channel].length - 1; i >= 0; i--) {
+                if (_pubsub_observers[channel][i] == callback) {
+                    _pubsub_observers[channel].splice(i, 1);
+                }
+            }  
+        }
+    }
+
+    /**
      * Remove old events from the publish stream (at least 2sec old)
      */
     function _dropOldEvents() {
@@ -944,6 +960,10 @@
                 _pubsub_observers[channel] = [];
             }
             _pubsub_observers[channel].push(callback);
+            // return 'unsubscribe' function
+            return function() {
+                _removeSubscriber(channel, callback);
+            };
         },
 
         /**
