@@ -40,9 +40,6 @@
     'use strict';
 
     var
-    /* yaJsStorage version */
-        YA_JS_STORAGE_VERSION = '0.1.0',
-
         /* detect a dollar object or create one if not found */
         $ = window.jQuery || window.$ || (window.$ = {}),
 
@@ -679,9 +676,7 @@
     ////////////////////////// PUBLIC INTERFACE /////////////////////////
 
     $.yaJsStorage = {
-        /* Version number */
-        version: YA_JS_STORAGE_VERSION,
-
+        
         /**
          * Sets a key's value.
          *
