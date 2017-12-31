@@ -1,0 +1,25 @@
+{
+  "name": "ya-js-storage",
+  "version": "0.1.0",
+  "description": "Yet another JS storage for those who still need to deal with legacy IE browsers version",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udalmik/ya-js-storage.git"
+  },
+  "keywords": [
+    "storage",
+    "localStorage",
+    "legacy",
+    "events"
+  ],
+  "author": "Mikhail Udalov <mikhail.udalov@gmail.com>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/udalmik/ya-js-storage/issues"
+  },
+  "homepage": "https://github.com/udalmik/ya-js-storage#readme"
+}
